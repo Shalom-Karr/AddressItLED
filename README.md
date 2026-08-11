@@ -9,8 +9,8 @@ Marketing/order site for **AddressIt LED** illuminated house number signs, manuf
 
 | Page | Purpose |
 |---|---|
-| `index.html` | Hero, product info, demo video, gallery, model lineup, FAQ, custom order form |
-| `pricing.html` | Full 2026 price list — every SKU with prices |
+| `index.html` | Hero, product info, demo video, gallery, model cards (photo + price, click to preselect the order form), FAQ, custom order form |
+| `pricing.html` | Full 2026 price list — every SKU with a product photo and prices |
 | `builder.html` | Visual sign builder — pick style/color/size and get the SKU to order |
 | `contact.html` | Contact form + direct call/email |
 | `thanks.html` | Post-submit confirmation. Shows order reference for orders, generic thanks for contact |
@@ -116,6 +116,9 @@ logo.jpg                            — AddressIt LED logo (navy/red)
 images/flyer.jpg                    — product marketing flyer
 images/example.jpg                  — MDR series product showcase
 images/examples.jpg                 — installed examples + color options
+images/models/*.jpg                 — per-model product shots (mdr, mdr-100/101/200/301,
+                                      ibl, ibll, iblp) used by the homepage model cards
+                                      and the pricing table rows
 videos/demo.mp4                     — self-hosted hero demo video
 netlify/functions/order-ref.mjs     — order ref generator (Netlify Blobs)
 netlify.toml                        — build/dev/function config + .netlify.app → .com redirect

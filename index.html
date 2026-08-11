@@ -78,7 +78,15 @@
     "image": [
       "https://addressitled.com/images/example.jpg",
       "https://addressitled.com/images/examples.jpg",
-      "https://addressitled.com/images/flyer.jpg"
+      "https://addressitled.com/images/flyer.jpg",
+      "https://addressitled.com/images/models/mdr.jpg",
+      "https://addressitled.com/images/models/mdr-100.jpg",
+      "https://addressitled.com/images/models/mdr-101.jpg",
+      "https://addressitled.com/images/models/mdr-200.jpg",
+      "https://addressitled.com/images/models/mdr-301.jpg",
+      "https://addressitled.com/images/models/ibl.jpg",
+      "https://addressitled.com/images/models/ibll.jpg",
+      "https://addressitled.com/images/models/iblp.jpg"
     ],
     "category": "Outdoor Lighting / House Numbers",
     "offers": {
@@ -243,6 +251,16 @@
     .form-step.active { animation: stepFade 0.35s ease-out; }
     .summary-grid dt { color: #64748b; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
     .summary-grid dd { color: #0F2553; font-weight: 600; margin-top: 2px; margin-bottom: 12px; }
+    .model-photo {
+      height: 172px; display: flex; align-items: center; justify-content: center;
+      padding: 14px; background: #fff; border-bottom: 1px solid #e7e5e4;
+    }
+    .model-photo img {
+      max-height: 100%; max-width: 100%; width: auto; height: auto;
+      object-fit: contain; border-radius: 4px; transition: transform 0.35s ease;
+    }
+    .model-card:hover .model-photo img { transform: scale(1.05); }
+    @media (prefers-reduced-motion: reduce) { .model-card:hover .model-photo img { transform: none; } }
   </style>
 </head>
 <body class="bg-stone-50 text-navy-dark antialiased">
@@ -460,40 +478,136 @@
   <section id="models" class="py-24 px-6 bg-white border-y border-stone-200">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
-        <p class="text-sm font-bold text-brandred uppercase tracking-wider mb-3">The models</p>
-        <h2 class="font-display text-4xl md:text-5xl font-bold mb-4 text-navy-dark">Pick the right one for your porch.</h2>
+        <p class="text-sm font-bold text-brandred uppercase tracking-wider mb-3">The models &amp; prices</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-4 text-navy-dark">Every model. Every price.</h2>
+        <p class="text-lg text-stone-600 max-w-2xl mx-auto">Every model with its photo and its price, right here. Free shipping in the US — nothing to request, nothing to wait for.</p>
       </div>
 
       <!-- MDR family -->
       <div class="mb-12">
         <h3 class="font-display text-2xl font-bold mb-1 text-navy-dark">MDR Series — lit backplate signs</h3>
         <p class="text-stone-600 mb-6">Lit number (and optional street name) on a backplate. Black or white background. White or red illumination. Futura or Iowan Old font.</p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-          <div class="p-4 rounded-xl border border-stone-200 bg-stone-50">
-            <p class="font-bold text-navy-dark">MDR</p>
-            <p class="text-xs text-stone-500 mb-2">10"</p>
-            <p class="text-sm text-stone-600">Compact, number only.</p>
-          </div>
-          <div class="p-4 rounded-xl border border-stone-200 bg-stone-50">
-            <p class="font-bold text-navy-dark">MDR-100</p>
-            <p class="text-xs text-stone-500 mb-2">14" or 17"</p>
-            <p class="text-sm text-stone-600">Larger backlit number on black.</p>
-          </div>
-          <div class="p-4 rounded-xl border border-stone-200 bg-stone-50">
-            <p class="font-bold text-navy-dark">MDR-101</p>
-            <p class="text-xs text-stone-500 mb-2">14" or 17"</p>
-            <p class="text-sm text-stone-600">Number + street name.</p>
-          </div>
-          <div class="p-4 rounded-xl border border-stone-200 bg-stone-50">
-            <p class="font-bold text-navy-dark">MDR-200</p>
-            <p class="text-xs text-stone-500 mb-2">14" or 17"</p>
-            <p class="text-sm text-stone-600">Number with thin border accent.</p>
-          </div>
-          <div class="p-4 rounded-xl border border-stone-200 bg-stone-50">
-            <p class="font-bold text-navy-dark">MDR-301</p>
-            <p class="text-xs text-stone-500 mb-2">14" or 17"</p>
-            <p class="text-sm text-stone-600">Number + street name with line.</p>
-          </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <!-- MDR -->
+          <a href="#order" data-family="MDR" data-model="MDR" class="model-card group h-full flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden hover:shadow-xl hover:border-navy/30 transition">
+            <div class="model-photo">
+              <img src="/images/models/mdr.jpg" width="258" height="183" loading="lazy" decoding="async"
+                   alt="MDR light up address sign — 10 inch frame with illuminated house numbers, shown lit at night" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR</span>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">10"</span>
+              </div>
+              <p class="text-sm text-stone-600 mb-4">Frame with illuminated numbers. Compact, number only.</p>
+              <div class="mt-auto flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                <span class="text-xs font-bold text-stone-500 uppercase">10"</span>
+                <span class="font-display font-bold text-xl text-navy-dark">$95.00</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- MDR-100 -->
+          <a href="#order" data-family="MDR" data-model="MDR-100" class="model-card group h-full flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden hover:shadow-xl hover:border-navy/30 transition">
+            <div class="model-photo">
+              <img src="/images/models/mdr-100.jpg" width="315" height="219" loading="lazy" decoding="async"
+                   alt="MDR-100 lighted house number sign — 14 or 17 inch frame with illuminated numbers on a black backplate" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR-100</span>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">14" / 17"</span>
+              </div>
+              <p class="text-sm text-stone-600 mb-4">Frame with illuminated numbers. Larger backlit number.</p>
+              <div class="mt-auto space-y-1.5">
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">14"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$125.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">17"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$135.00</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- MDR-101 -->
+          <a href="#order" data-family="MDR" data-model="MDR-101" class="model-card group h-full flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden hover:shadow-xl hover:border-navy/30 transition">
+            <div class="model-photo">
+              <img src="/images/models/mdr-101.jpg" width="420" height="282" loading="lazy" decoding="async"
+                   alt="MDR-101 light up address sign with street name — illuminated numbers 3476 and 'Forest Hill Rd' on a black backplate" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR-101</span>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">14" / 17"</span>
+              </div>
+              <p class="text-sm text-stone-600 mb-4">Frame with illuminated numbers &amp; address.</p>
+              <div class="mt-auto space-y-1.5">
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">14"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$135.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">17"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$145.00</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- MDR-200 -->
+          <a href="#order" data-family="MDR" data-model="MDR-200" class="model-card group h-full flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden hover:shadow-xl hover:border-navy/30 transition">
+            <div class="model-photo">
+              <img src="/images/models/mdr-200.jpg" width="423" height="276" loading="lazy" decoding="async"
+                   alt="MDR-200 lighted address sign — illuminated border and numbers on a black backplate" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR-200</span>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">14" / 17"</span>
+              </div>
+              <p class="text-sm text-stone-600 mb-4">Frame with illuminated border &amp; numbers.</p>
+              <div class="mt-auto space-y-1.5">
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">14"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$135.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">17"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$145.00</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- MDR-301 -->
+          <a href="#order" data-family="MDR" data-model="MDR-301" class="model-card group h-full flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden hover:shadow-xl hover:border-navy/30 transition">
+            <div class="model-photo">
+              <img src="/images/models/mdr-301.jpg" width="417" height="294" loading="lazy" decoding="async"
+                   alt="MDR-301 light up house number sign — illuminated number 107 over 'Collinson' street name with a divider line" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR-301</span>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">14" / 17"</span>
+              </div>
+              <p class="text-sm text-stone-600 mb-4">Frame with illuminated numbers &amp; address, on a line.</p>
+              <div class="mt-auto space-y-1.5">
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">14"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$135.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">17"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$145.00</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
         </div>
       </div>
 
@@ -501,23 +615,94 @@
       <div>
         <h3 class="font-display text-2xl font-bold mb-1 text-navy-dark">IBL Series — 3D dimensional numbers</h3>
         <p class="text-stone-600 mb-6">Raised physical numbers in black, silver, or white finish. Optional color-temperature illumination.</p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="p-5 rounded-xl border border-stone-200 bg-stone-50">
-            <p class="font-bold text-navy-dark mb-1">IBL-8 / 10 / 12 / 14</p>
-            <p class="text-xs text-stone-500 mb-3">3D single numbers, 8" / 10" / 12" / 14"</p>
-            <p class="text-sm text-stone-600">Stand-alone dimensional digits, mount individually. Black, silver, or white finish.</p>
-          </div>
-          <div class="p-5 rounded-xl border border-stone-200 bg-stone-50">
-            <p class="font-bold text-navy-dark mb-1">IBLL-14 / 17</p>
-            <p class="text-xs text-stone-500 mb-3">3D numbers on a line, 14" or 17"</p>
-            <p class="text-sm text-stone-600">Dimensional numbers mounted on a horizontal line — clean modern look.</p>
-          </div>
-          <div class="p-5 rounded-xl border border-stone-200 bg-stone-50">
-            <p class="font-bold text-navy-dark mb-1">IBLP-14 / 17</p>
-            <p class="text-xs text-stone-500 mb-3">3D numbers on a plate, 14" or 17"</p>
-            <p class="text-sm text-stone-600">Dimensional numbers on a backplate. Plate in black or silver.</p>
-          </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <!-- IBL -->
+          <a href="#order" data-family="IBL" data-model="IBL-8" class="model-card group h-full flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden hover:shadow-xl hover:border-navy/30 transition">
+            <div class="model-photo">
+              <img src="/images/models/ibl.jpg" width="138" height="231" loading="lazy" decoding="async"
+                   alt="IBL 3D single house number — raised dimensional digit in brushed silver finish" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBL</span>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">8"–14"</span>
+              </div>
+              <p class="text-sm text-stone-600 mb-4">3D single numbers. Priced per digit, mounted individually. Black, silver, or white.</p>
+              <div class="mt-auto space-y-1.5">
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">8"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$110.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">10"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$120.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">12"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$130.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">14"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$145.00</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- IBLL -->
+          <a href="#order" data-family="IBL" data-model="IBLL-14" class="model-card group h-full flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden hover:shadow-xl hover:border-navy/30 transition">
+            <div class="model-photo">
+              <img src="/images/models/ibll.jpg" width="390" height="225" loading="lazy" decoding="async"
+                   alt="IBLL 3D house numbers on a line — raised dimensional 462 mounted on a horizontal bar" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBLL</span>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">14" / 17"</span>
+              </div>
+              <p class="text-sm text-stone-600 mb-4">3D numbers on a line. Clean, modern horizontal mount.</p>
+              <div class="mt-auto space-y-1.5">
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">14"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$135.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">17"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$145.00</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- IBLP -->
+          <a href="#order" data-family="IBL" data-model="IBLP-14" class="model-card group h-full flex flex-col rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden hover:shadow-xl hover:border-navy/30 transition">
+            <div class="model-photo">
+              <img src="/images/models/iblp.jpg" width="315" height="195" loading="lazy" decoding="async"
+                   alt="IBLP 3D house numbers on a plate — raised dimensional 1389 on a black backplate" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBLP</span>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">14" / 17"</span>
+              </div>
+              <p class="text-sm text-stone-600 mb-4">3D numbers on a plate. Plate in black or silver.</p>
+              <div class="mt-auto space-y-1.5">
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">14"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$135.00</span>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-stone-50 border border-stone-100">
+                  <span class="text-xs font-bold text-stone-500 uppercase">17"</span>
+                  <span class="font-display font-bold text-lg text-navy-dark">$145.00</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
         </div>
+
+        <p class="text-xs text-stone-500 mt-6 text-center">Prices in USD from the Illumicor 2026 price list. Free shipping in the US. <a href="/pricing.html" class="font-semibold text-navy underline hover:text-brandred">See the full price list →</a></p>
       </div>
 
       <!-- VISUAL BUILDER CTA -->
@@ -1295,6 +1480,30 @@
           syncMdrStreet();
           syncMdrSizes();
           syncIblPlate();
+        });
+      });
+
+      // -------- Model cards preselect the order form --------
+      function check(el) {
+        if (!el || el.checked) return;
+        el.checked = true;
+        el.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+      document.querySelectorAll('.model-card[data-model]').forEach(card => {
+        card.addEventListener('click', () => {
+          const model = card.dataset.model;
+          check(form.querySelector('input[name="product-family"][value="' + card.dataset.family + '"]'));
+          if (card.dataset.family === 'MDR') {
+            const opt = Array.from(mdrModelSelect.options).find(o => o.value === model);
+            if (opt && opt.dataset.type) {
+              check(form.querySelector('input[name="mdr-include-type"][value="' + opt.dataset.type + '"]'));
+            }
+            mdrModelSelect.value = model;
+            mdrModelSelect.dispatchEvent(new Event('change', { bubbles: true }));
+          } else {
+            iblModelSelect.value = model;
+            iblModelSelect.dispatchEvent(new Event('change', { bubbles: true }));
+          }
         });
       });
 

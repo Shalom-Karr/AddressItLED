@@ -33,7 +33,15 @@
     "image": [
       "https://addressitled.com/images/example.jpg",
       "https://addressitled.com/images/examples.jpg",
-      "https://addressitled.com/images/flyer.jpg"
+      "https://addressitled.com/images/flyer.jpg",
+      "https://addressitled.com/images/models/mdr.jpg",
+      "https://addressitled.com/images/models/mdr-100.jpg",
+      "https://addressitled.com/images/models/mdr-101.jpg",
+      "https://addressitled.com/images/models/mdr-200.jpg",
+      "https://addressitled.com/images/models/mdr-301.jpg",
+      "https://addressitled.com/images/models/ibl.jpg",
+      "https://addressitled.com/images/models/ibll.jpg",
+      "https://addressitled.com/images/models/iblp.jpg"
     ],
     "category": "Outdoor Lighting / House Numbers",
     "offers": {
@@ -129,6 +137,16 @@
     }
     @keyframes flicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.85; } }
     .flicker { animation: flicker 2.5s ease-in-out infinite; }
+    .price-thumb {
+      flex-shrink: 0; width: 82px; height: 56px;
+      display: flex; align-items: center; justify-content: center;
+      padding: 3px; background: #fff;
+      border: 1px solid #e7e5e4; border-radius: 8px;
+    }
+    .price-thumb img {
+      max-width: 100%; max-height: 100%; width: auto; height: auto;
+      object-fit: contain; border-radius: 3px;
+    }
   </style>
 </head>
 <body class="bg-stone-50 text-navy-dark antialiased">
@@ -227,18 +245,19 @@
         <div class="rounded-2xl border border-stone-200 bg-white shadow-sm overflow-hidden">
           <!-- Desktop header -->
           <div class="hidden md:grid grid-cols-12 gap-4 px-6 py-3 bg-navy text-white text-xs font-bold uppercase tracking-wider">
-            <div class="col-span-2">Model</div>
-            <div class="col-span-5">Description</div>
+            <div class="col-span-3">Model</div>
+            <div class="col-span-4">Description</div>
             <div class="col-span-2 text-center">Size</div>
             <div class="col-span-3 text-right">Price</div>
           </div>
 
           <!-- MDR (10") -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-5 border-t border-stone-100 first:border-t-0">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/mdr.jpg" width="258" height="183" loading="lazy" decoding="async" alt="MDR light up address sign, 10 inch frame with illuminated house numbers" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-2">Sign:</span>
               Frame with illuminated numbers — compact, number only.
             </div>
@@ -253,10 +272,11 @@
 
           <!-- MDR-100 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-5 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/mdr-100.jpg" width="315" height="219" loading="lazy" decoding="async" alt="MDR-100 lighted house number sign with illuminated numbers on a black backplate" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR-100</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-2">Sign:</span>
               Frame with illuminated numbers.
             </div>
@@ -276,10 +296,11 @@
 
           <!-- MDR-101 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-5 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/mdr-101.jpg" width="420" height="282" loading="lazy" decoding="async" alt="MDR-101 light up address sign with illuminated numbers and street name" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR-101</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-2">Sign:</span>
               Frame with illuminated numbers &amp; address.
             </div>
@@ -299,10 +320,11 @@
 
           <!-- MDR-200 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-5 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/mdr-200.jpg" width="423" height="276" loading="lazy" decoding="async" alt="MDR-200 lighted address sign with illuminated border and numbers" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR-200</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-2">Sign:</span>
               Frame with illuminated border &amp; numbers.
             </div>
@@ -322,10 +344,11 @@
 
           <!-- MDR-301 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-5 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/mdr-301.jpg" width="417" height="294" loading="lazy" decoding="async" alt="MDR-301 light up house number sign with illuminated numbers over a street name on a line" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">MDR-301</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-2">Sign:</span>
               Frame with illuminated numbers &amp; address.
             </div>
@@ -363,18 +386,19 @@
           </div>
 
           <div class="hidden md:grid grid-cols-12 gap-4 px-6 py-3 bg-navy text-white text-xs font-bold uppercase tracking-wider">
-            <div class="col-span-2">Model</div>
-            <div class="col-span-5">Description</div>
+            <div class="col-span-3">Model</div>
+            <div class="col-span-4">Description</div>
             <div class="col-span-2 text-center">Size</div>
             <div class="col-span-3 text-right">Price</div>
           </div>
 
           <!-- IBL-8 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-4 border-t border-stone-100 first:md:border-t-0">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/ibl.jpg" width="138" height="231" loading="lazy" decoding="async" alt="IBL 3D single house number, raised dimensional digit" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBL-8</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">3D single number, stand-alone dimensional digit.</div>
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">3D single number, stand-alone dimensional digit.</div>
             <div class="col-span-6 md:col-span-2 text-sm md:text-center">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Size:</span>
               <span class="font-semibold">8"</span>
@@ -386,10 +410,11 @@
 
           <!-- IBL-10 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-4 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/ibl.jpg" width="138" height="231" loading="lazy" decoding="async" alt="IBL 3D single house number, raised dimensional digit" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBL-10</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">3D single number, stand-alone dimensional digit.</div>
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">3D single number, stand-alone dimensional digit.</div>
             <div class="col-span-6 md:col-span-2 text-sm md:text-center">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Size:</span>
               <span class="font-semibold">10"</span>
@@ -401,10 +426,11 @@
 
           <!-- IBL-12 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-4 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/ibl.jpg" width="138" height="231" loading="lazy" decoding="async" alt="IBL 3D single house number, raised dimensional digit" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBL-12</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">3D single number, stand-alone dimensional digit.</div>
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">3D single number, stand-alone dimensional digit.</div>
             <div class="col-span-6 md:col-span-2 text-sm md:text-center">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Size:</span>
               <span class="font-semibold">12"</span>
@@ -416,10 +442,11 @@
 
           <!-- IBL-14 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-4 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/ibl.jpg" width="138" height="231" loading="lazy" decoding="async" alt="IBL 3D single house number, raised dimensional digit" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBL-14</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">3D single number, stand-alone dimensional digit.</div>
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">3D single number, stand-alone dimensional digit.</div>
             <div class="col-span-6 md:col-span-2 text-sm md:text-center">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Size:</span>
               <span class="font-semibold">14"</span>
@@ -437,18 +464,19 @@
           </div>
 
           <div class="hidden md:grid grid-cols-12 gap-4 px-6 py-3 bg-navy text-white text-xs font-bold uppercase tracking-wider">
-            <div class="col-span-2">Model</div>
-            <div class="col-span-5">Description</div>
+            <div class="col-span-3">Model</div>
+            <div class="col-span-4">Description</div>
             <div class="col-span-2 text-center">Size</div>
             <div class="col-span-3 text-right">Price</div>
           </div>
 
           <!-- IBLL-14 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-4 border-t border-stone-100 first:md:border-t-0">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/ibll.jpg" width="390" height="225" loading="lazy" decoding="async" alt="IBLL 3D house numbers on a line, raised dimensional numbers on a horizontal bar" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBLL-14</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">Dimensional numbers mounted on a horizontal line — modern look.</div>
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">Dimensional numbers mounted on a horizontal line — modern look.</div>
             <div class="col-span-6 md:col-span-2 text-sm md:text-center">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Size:</span>
               <span class="font-semibold">14"</span>
@@ -460,10 +488,11 @@
 
           <!-- IBLL-17 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-4 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/ibll.jpg" width="390" height="225" loading="lazy" decoding="async" alt="IBLL 3D house numbers on a line, raised dimensional numbers on a horizontal bar" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBLL-17</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">Dimensional numbers mounted on a horizontal line — modern look.</div>
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">Dimensional numbers mounted on a horizontal line — modern look.</div>
             <div class="col-span-6 md:col-span-2 text-sm md:text-center">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Size:</span>
               <span class="font-semibold">17"</span>
@@ -481,18 +510,19 @@
           </div>
 
           <div class="hidden md:grid grid-cols-12 gap-4 px-6 py-3 bg-navy text-white text-xs font-bold uppercase tracking-wider">
-            <div class="col-span-2">Model</div>
-            <div class="col-span-5">Description</div>
+            <div class="col-span-3">Model</div>
+            <div class="col-span-4">Description</div>
             <div class="col-span-2 text-center">Size</div>
             <div class="col-span-3 text-right">Price</div>
           </div>
 
           <!-- IBLP-14 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-4 border-t border-stone-100 first:md:border-t-0">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/iblp.jpg" width="315" height="195" loading="lazy" decoding="async" alt="IBLP 3D house numbers on a plate, raised dimensional numbers on a backplate" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBLP-14</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">Dimensional numbers on a backplate. Plate in black or silver.</div>
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">Dimensional numbers on a backplate. Plate in black or silver.</div>
             <div class="col-span-6 md:col-span-2 text-sm md:text-center">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Size:</span>
               <span class="font-semibold">14"</span>
@@ -504,10 +534,11 @@
 
           <!-- IBLP-17 -->
           <div class="price-row grid grid-cols-12 gap-4 px-5 md:px-6 py-4 border-t border-stone-100">
-            <div class="col-span-12 md:col-span-2 flex items-center">
+            <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+              <span class="price-thumb"><img src="/images/models/iblp.jpg" width="315" height="195" loading="lazy" decoding="async" alt="IBLP 3D house numbers on a plate, raised dimensional numbers on a backplate" /></span>
               <span class="inline-flex items-center justify-center px-3 py-1 rounded-md bg-navy-50 text-navy font-bold text-sm">IBLP-17</span>
             </div>
-            <div class="col-span-12 md:col-span-5 text-sm text-stone-700">Dimensional numbers on a backplate. Plate in black or silver.</div>
+            <div class="col-span-12 md:col-span-4 text-sm text-stone-700">Dimensional numbers on a backplate. Plate in black or silver.</div>
             <div class="col-span-6 md:col-span-2 text-sm md:text-center">
               <span class="md:hidden text-xs font-bold text-stone-500 uppercase tracking-wider mr-1">Size:</span>
               <span class="font-semibold">17"</span>
